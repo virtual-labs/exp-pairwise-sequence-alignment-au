@@ -2,7 +2,7 @@ Biological sequences refer to sequences of nucleotides or amino acids. Nucleic a
 
  &nbsp;
 
-![](/experiment/images/1.png)
+<center><img src="images/1.png" title="" /></center>
  
  &nbsp;
 
@@ -43,7 +43,7 @@ For analysing a biological sequence, one factor that need to be taken into accou
 
 For example, consider the following sequence
 
-![](/experiment/images/2.png)
+<center><img src="images/2.png" title="" /></center>
  
  
 
@@ -56,7 +56,7 @@ A positive value is given as a match and negative value is given for a mismatch.
  
  
  
-![](/experiment/images/3.png)
+<center><img src="images/3.png" title="" /></center>
 
 &nbsp;
 
