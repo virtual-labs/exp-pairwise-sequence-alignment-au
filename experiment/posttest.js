@@ -88,26 +88,73 @@
     /////////////// Write the MCQ below in the exactly same described format ///////////////
 
 
-    const myQuestions = [{
-            question: "1.This is a sample question:", ///// Write the question inside double quotes
+    const myQuestions = [
+        
+        {
+            question: "1. Local alignments are most applied when:", ///// Write the question inside double quotes
             answers: {
-                a: "This is a sample answer A", ///// Write the option 1 inside double quotes
-                b: "This is a sample answer B", ///// Write the option 2 inside double quotes
+                a: "Dissimilar sequences which are suspected to contain homologous regions", ///// Write the option 1 inside double quotes
+                b: "Large sequence having similarity index", ///// Write the option 2 inside double quotes
+                c: "There are homologous sequences which are of equal in length",
+                d: "None of the above"
             },
-            correctAnswer: "a" ///// Write the correct option inside double quotes
+            correctAnswer: "c" ///// Write the correct option inside double quotes
         },
 
-    {
-      question: "<img src='images/8.PNG'><br>Identify the location of Secondary electron detector",  ///// Write the question inside double quotes
-      answers: {
-        a: "<img src='images/1b.png'>",                  ///// Write the option 1 inside double quotes
-        b: "<img src='images/1a.png'>",                  ///// Write the option 2 inside double quotes
-        c: "<img src='images/1c.PNG'>",      },
-      correctAnswer: "c"                ///// Write the correct option inside double quotes
-    },
+        {
+            question: "2. Which of the following is not true to describe local alignment algorithm ?", ///// Write the question inside double quotes
+            answers: {
+                a: "Score is always positive", ///// Write the option 1 inside double quotes
+                b: "Score is always negative", ///// Write the option 2 inside double quotes
+                c: "Absence of gap",
+                d: "None of the above"
+            },
+            correctAnswer: "b" ///// Write the correct option inside double quotes
+        },
 
+        {
+            question: "3. Which one of the following is an approach to the global alignment ?", ///// Write the question inside double quotes
+            answers: {
+                a: "BLAST", ///// Write the option 1 inside double quotes
+                b: "LALIGN", ///// Write the option 2 inside double quotes
+                c: "Needleman-Wunch",
+                d: "EMBOSS Water"
+            },
+            correctAnswer: "c" ///// Write the correct option inside double quotes
+        },
 
-        
+        {
+            question: "4. Scoring in Pairwise Sequence Alignment depends on:", ///// Write the question inside double quotes
+            answers: {
+                a: "Match", ///// Write the option 1 inside double quotes
+                b: "Mismatch", ///// Write the option 2 inside double quotes
+                c: "Mutation",
+                d: "Match and Mismatch"
+            },
+            correctAnswer: "d" ///// Write the correct option inside double quotes
+        },
+
+        {
+            question: "5. Pairwise sequence alignment methods are applicable in:", ///// Write the question inside double quotes
+            answers: {
+                a: "Locating specific amino acid features", ///// Write the option 1 inside double quotes
+                b: "HMM making", ///// Write the option 2 inside double quotes
+                c: "Phylogenetic tree analysis",
+                d: "All the above"
+            },
+            correctAnswer: "d" ///// Write the correct option inside double quotes
+        },       
+ 
+        {
+            question: "6. Example of pairwise sequence alignment tools:", ///// Write the question inside double quotes
+            answers: {
+                a: "ALLALIGN", ///// Write the option 1 inside double quotes
+                b: "GAP", ///// Write the option 2 inside double quotes
+                c: "NAP",
+                d: "All the above"
+            },
+            correctAnswer: "d" ///// Write the correct option inside double quotes
+        },       
     ];
 
 
