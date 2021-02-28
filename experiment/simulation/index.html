@@ -1,13 +1,78 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
+    <head>
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
-</body>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    </head>
+    <title>
+        Vlab experiment Seq Alignment
+    </title>
+
+    <script src="./bioseq-js-master/dist/bioseq.js"></script>
+
+    <body>
+        <!--h1>Vlab experiment Seq Alignment</h1-->
+        <img src="./images/Amritalogo.png" alt="vlab logo" style="width:100px;height:30px;"/>
+        <img src="./images/vlablogo2.jpg" alt="vlab logo" style="width:70px;height:35px;">
+
+        <br>
+        <br>
+        
+        
+        <div>
+            <form>
+
+                <div class="form-group">
+                    
+                    <label for="seqinput1">Sequence 1</label></br>
+                    <textarea id="seqinput1" name="textareainput" rows="5" cols="70" placeholder="enter you sequence here..." ></textarea>
+                    
+                    </br>
+                    </br>
+                    
+                    <label for="seqinput2">Sequence 2</label></br>
+                    <textarea id="seqinput2" name="textareainput" rows="5" cols="70" placeholder="enter you sequence here..." ></textarea>
+                    
+                    </br>
+                    </br>
+
+                    <button class="btn btn-success" id="csvload" onclick="AlignSeq()" type="button" style="width: 108px">Align Seq</button>
+                    <a href="./sequence.fasta" download="Samplefile.fasta" > <button type="button">Sample File </button> </a>
+                    
+                    <br>
+                    <br>
+                    
+                    <output id="seqresult1"></br>
+                        
+                    </output>
+
+                </div>
+
+            </form>
+        </div>
+
+        <script>
+
+        
+
+            //reference : https://cdcgov.github.io/bioseq-js/
+
+            //finding sequence alignment function with bioseq.js package
+
+            function AlignSeq() {
+
+                var target = document.getElementById("seqinput1").value.toUpperCase();
+                var query = document.getElementById("seqinput2").value.toUpperCase();
+
+                var rst = bioseq.align(target, query);
+
+                var fmt = bioseq.cigar2gaps(target, query, rst.position, rst.CIGAR);
+
+                //document.getElementById('seqresult1').innerHTML = "Alignment Score: " + rst.score + "<br/><br/>" + fmt[0] + "<br/><br/>" + fmt[1];
+                document.getElementById('seqresult1').innerHTML = "Alignment Score: " + rst.score 
+            }
+
+        </script>
+
+    </body>
 </html>
