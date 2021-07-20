@@ -76,9 +76,8 @@
                 var rst = bioseq.align(target, query);
 
                 var fmt = bioseq.cigar2gaps(target, query, rst.position, rst.CIGAR);
-
-                //document.getElementById('seqresult1').innerHTML = "Alignment Score: " + rst.score + "<br/><br/>" + fmt[0] + "<br/><br/>" + fmt[1];
-                document.getElementById('seqresult1').innerHTML = "Alignment Score: " + rst.score 
+                document.getElementById('seqresult1').innerHTML = "Sequence alignment: " + "<br/><br/>" + fmt[0] + "<br/><br/>" + fmt[1];
+//                 document.getElementById('seqresult1').innerHTML = "Alignment Score: " + rst.score 
             }
 
         </script>
