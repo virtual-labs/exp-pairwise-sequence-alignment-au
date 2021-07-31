@@ -9,6 +9,7 @@ Sequence1 : tgcaccaaacatgtctaaagctggaaccaaaattactttctttgaagacaaaaactttcaaggccgcc
 Sequence 2
 gatctttgagaaaggggattttaatggtcagatgcatgagaccacggaagactgcccttccatcatggagcagttccacatgcgggaggtccactcctgtaaggtgctggagggcgcctggatcttctatgagctgcccaactaccgaggcaggcagtacctgctggacaagaaggagtaccggaagcccgtcgactggggtgcagcttccccagctgtccagtctttccgccgcattgtggagtgatgatacagatgcggccaaacgctggctggccttgtcatccaaataagcattataaataaaacaattggcatgc
 
+
 <center><img src="images/exp3.png" title="" /></center>
 
 2.	Click on Align Seq Tab for executing simulator.
